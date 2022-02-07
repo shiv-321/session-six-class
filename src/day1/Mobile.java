@@ -13,4 +13,12 @@ public class Mobile {
     //taking picture
     //chat
     //use internet
+
+
+    Class mobile;
+    int price = 200;
+    String brand = "Samsung";
+    String color = "White";
+    float weight = 1.2f;
+    String camera = "Good";
 }
