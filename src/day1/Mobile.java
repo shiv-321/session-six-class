@@ -3,10 +3,19 @@ package day1;
 public class Mobile {
     //states
     //price
+    float price;
+
     //brand
+    String brand;
+
     //color
+    String color;
+
     //weight
-    //camera
+    float weight;}
+
+    //camera quality
+//    String cameraQuality;
 
     //behaviour
     //call
@@ -15,10 +24,4 @@ public class Mobile {
     //use internet
 
 
-    Class mobile;
-    int price = 200;
-    String brand = "Samsung";
-    String color = "White";
-    float weight = 1.2f;
-    String camera = "Good";
-}
+
