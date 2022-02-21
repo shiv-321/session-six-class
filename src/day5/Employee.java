@@ -1,5 +1,6 @@
 package day5;
 
+import java.util.Objects;
 import java.util.logging.Logger;
 
 public class Employee {
@@ -7,27 +8,30 @@ public class Employee {
     private float salary;
     private String phoneNumber;
     private String licenseNumber;
+    private Gender gender; // Male, Female and Other
 
-    public Employee(){
-        Logger.getGlobal().info("Default constructor called");
-        this.name = "";
-        this.salary = 0;
-        this.phoneNumber = "";
-        this.licenseNumber = "";
-    }
-    public Employee(String name, float salary, String phoneNumber){
+//    public Employee(){
+//        this.name = "";
+//        this.salary = 0;
+//        this.phoneNumber = "";
+//        this.licenseNumber = "";
+//        Logger.getGlobal().info("Default constructor called");
+//    }
+    public Employee(String name, float salary, String phoneNumber, Gender gender){
         this.name = name;
         this.salary = salary;
         this.phoneNumber = phoneNumber;
+        this.gender = gender;
         Logger.getGlobal().info("First parameterized constructor");
 
     }
-    public Employee(String name, float salary, String phoneNumber, String licenseNumber){
-        Logger.getGlobal().info("Second parameterized constructor");
-        this.name = name;
+    public Employee(String name, float salary, String phoneNumber, Gender gender, String licenseNumber){
+        this.name = Objects.requireNonNullElse(name, "");
         this.salary = salary;
-        this.phoneNumber = phoneNumber;
-        this.licenseNumber = licenseNumber;
+        this.phoneNumber = Objects.requireNonNullElse(phoneNumber, "");
+        this.licenseNumber = Objects.requireNonNullElse(licenseNumber, "");
+        Logger.getGlobal().info("Second parameterized constructor");
+
     }
 
 
@@ -63,6 +67,17 @@ public class Employee {
         this.licenseNumber = licenseNumber;
     }
 
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public void addBonus(Employee employee, float bonus){
+        employee.salary = employee.salary + bonus;
+    }
     @Override
     public String toString() {
         return "Employee{" +
