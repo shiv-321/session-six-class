@@ -17,6 +17,7 @@ public class Account {
     private String address;
     private String socialSecurityNumber;
     private String phoneNumber;
+    private String licenseNumber;
 
     //Getter and Setter
 
@@ -72,6 +73,7 @@ public class Account {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+    
 
     //behaviour
     //open account
