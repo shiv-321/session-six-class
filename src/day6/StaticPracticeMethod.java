@@ -9,6 +9,6 @@ public class StaticPracticeMethod {
     }
 }
 
-//If we write static variables, static method and main method in same class we can have a direcr access for the variables
+//If we write static variables, static method and main method in same class we can have a direct access for the variables
 // But if we write static variables and static method in one class and main method in another class then we need to
 // use class name instead of object.
