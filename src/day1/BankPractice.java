@@ -4,6 +4,7 @@ public class BankPractice {
     public static void main(String[] args) {
         Account account = new Account();
 
+
 //        account.accountName="ABC";
 //        account.accountNumber1="1234567890";
 //        account.accountType = "Saving";
