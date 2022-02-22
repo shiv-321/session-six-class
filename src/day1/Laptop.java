@@ -20,13 +20,23 @@ public class Laptop {
     //Hard disk
     String hardDisk;
 
+    //serialNumber
+    String serialNumber;
+
+    //isTouchScreen
+    boolean isTouchScreen;
+
+    //screenSize
+    String screenSize;
+
+
 
 
     //Behaviour  // specific to what you are doing
     // working
     //opening
     //closing
-    // entertainment
+    // playingMovie
     // storing data
     //add to cart
 
