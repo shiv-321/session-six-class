@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 public class StaticPracticeMethod {
     public static void main(String[] args) {
-        Logger.getGlobal().info(String.valueOf(StaticDemo.a));
+        Logger.getGlobal().info(String.valueOf(StaticDemo.getA()));
         StaticDemo.display();
     }
 }
