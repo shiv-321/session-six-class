@@ -13,6 +13,8 @@ public class BlankPractice {
         int e = 5;
         int f = 10;
         int z = addTwoNumber(e, f);
+
+
     }
     public static int addTwoNumber(int a, int b) // function with return type
     {

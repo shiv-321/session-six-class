@@ -63,5 +63,6 @@ public class CatPractice {
         System.out.println(ramboWeight);
 
 //        thor.meow;
+//        thor.sleep();
     }
 }

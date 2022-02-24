@@ -27,6 +27,7 @@ public class ConstructorPractice {
 
     }
 
+
     public static void main(String[] args) {
         ConstructorPractice student1 = new ConstructorPractice();
         Logger.getGlobal().info(student1.name);
@@ -42,7 +43,7 @@ public class ConstructorPractice {
         Logger.getGlobal().info(student3.licenseNumber);
         Logger.getGlobal().info(String.valueOf(student3.salary));
 
-
+// If I tried to get access the variables from other class then I need to use getter and setter methods.
     }
 
 

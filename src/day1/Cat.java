@@ -62,7 +62,7 @@ public class Cat {
     void eats(){
 
         System.out.println("Eating");
-        meow();
+
     }
     void sleep(){
 
