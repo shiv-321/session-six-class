@@ -36,6 +36,7 @@ public class BankAccount {
 
     //addBalance
     public void deposit(BankAccount account, double amount){
+
         this.accountBalance += amount;
     }
     //transferBalance
