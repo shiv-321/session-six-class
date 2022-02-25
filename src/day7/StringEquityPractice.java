@@ -11,14 +11,18 @@ public class StringEquityPractice {
         String s3 = s1.substring(0, 4);
         System.out.println(s3);
 
-        String address = "Texas";
-        Logger.getGlobal().info(String.valueOf(address.equals("Texas")));
-        Logger.getGlobal().info(String.valueOf(address.equals("texas")));
+
+        Logger.getGlobal().info(String.valueOf(s2==s3)); // == check memory location
+        Logger.getGlobal().info(String.valueOf(s2.equals(s3))); // equals method checks memory location and content
+
+//        String address = "Texas";
+//        Logger.getGlobal().info(String.valueOf(address.equals("Texas")));
+//        Logger.getGlobal().info(String.valueOf(address.equals("texas")));
 
 //    equalsIgnoreCase --> Returns true if two strings are equal ignoring the case of character
-        String address1 = "Texas";
-        Logger.getGlobal().info(String.valueOf(address1.equalsIgnoreCase("texas")));
-        Logger.getGlobal().info(String.valueOf(address1.equalsIgnoreCase("Alabama")));
+//        String address1 = "Texas";
+//        Logger.getGlobal().info(String.valueOf(address1.equalsIgnoreCase("texas")));
+//        Logger.getGlobal().info(String.valueOf(address1.equalsIgnoreCase("Alabama")));
     }
 
 

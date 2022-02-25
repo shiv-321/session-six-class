@@ -9,11 +9,11 @@ public class StringClassPractice {
 //        Logger.getGlobal().info(name.toLowerCase());
 
         //String Methods
-        String greetings = "Hello";
+//        String greetings = "Hello";
 //        String substring = greetings.substring(1);
 //        Logger.getGlobal().info(substring);
-
-        //greetings.substring()
+//
+//        //greetings.substring()
 //        String substring1 = greetings.substring(1,4);
 //        Logger.getGlobal().info(substring1);
 //        Logger.getGlobal().info(greetings.substring(1, 3));
@@ -87,11 +87,11 @@ public class StringClassPractice {
 //        Logger.getGlobal().info(message);
 
         // .split()
-//        String splitPractice = "Hello Java Students";
-//        String[] splitedString = splitPractice.split(" ");
-//        String[] splitedString1 = splitPractice.split(",");
-//        Logger.getGlobal().info(String.valueOf(splitedString.length));
-//        Logger.getGlobal().info(String.valueOf(splitedString1.length));  //consider 1 while splitting by comma
+        String splitPractice = "Hello Java Students";
+        String[] splitedString = splitPractice.split(" ");
+        String[] splitedString1 = splitPractice.split(",");
+        Logger.getGlobal().info(String.valueOf(splitedString.length));
+        Logger.getGlobal().info(String.valueOf(splitedString1.length));  //consider 1 while splitting by comma
 
         //.startsWith() --> returns true if name starts with string "..."
 //        String exercise = "Everyday";
@@ -116,6 +116,8 @@ public class StringClassPractice {
 //        Logger.getGlobal().info(String.valueOf(exercise.lastIndexOf("y")));
 //        Logger.getGlobal().info(String.valueOf(exercise.lastIndexOf("y",2)));
 
+//        String joinExample = String.join("/", "S", "L", "XL", "XXL");
+//        Logger.getGlobal().info(joinExample);
 
 
 

@@ -10,7 +10,7 @@ public class CalendarPractice {
         System.out.println(c.getCalendarType());
         System.out.println(c.getTimeZone());
 
-//        System.out.println("Output: " + c);
+        System.out.println("Output: " + c);
         System.out.println("Today's date: " + c.get(Calendar.DATE));
         System.out.println("Month: " + c.get(Calendar.MONTH));
         System.out.println("Year: " + c.get(Calendar.YEAR));
