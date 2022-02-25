@@ -19,8 +19,11 @@ public class PredefinedClassesPractice {
 
 //        System.out.println(Math.random());
 
-        double randomNumber = Math.random();
-        System.out.println(Math.round(randomNumber * 10));
+//        double randomNumber = Math.random();
+//        System.out.println(Math.round(randomNumber * 10));
+
+        double ranNumber = Math.random()*100;
+        System.out.println(ranNumber);
 
 
 

@@ -13,19 +13,19 @@ public class DatePractice {
     public static void main(String[] args) {
 
         Date date = new Date();
-        Logger.getGlobal().info(String.valueOf(date));
+        Logger.getGlobal().info(String.valueOf("Today is: " + date));
 
         //current
         LocalDate localDate = LocalDate.now();
-        Logger.getGlobal().info(String.valueOf(localDate));
+        Logger.getGlobal().info(String.valueOf("Current date is: " + localDate));
 
         //current
         LocalTime localTime = LocalTime.now();
-        Logger.getGlobal().info(String.valueOf(localTime));
+        Logger.getGlobal().info(String.valueOf("Given time: " + localTime));
 
         //Current
         LocalDateTime localDateTime = LocalDateTime.now();
-        Logger.getGlobal().info(String.valueOf(localDateTime));
+        Logger.getGlobal().info(String.valueOf("Current date and time: " + localDateTime));
 
         //Formatting
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm:ss a");
@@ -35,6 +35,7 @@ public class DatePractice {
         //current
         Calendar calendar = Calendar.getInstance();
         Logger.getGlobal().info(String.valueOf(calendar));
+        Logger.getGlobal().info(String.valueOf("The current date is: " + calendar.getTime()));
 
         //Specific
         Calendar specificCalendar = Calendar.getInstance();
@@ -42,13 +43,5 @@ public class DatePractice {
         specificCalendar.set(Calendar.MONTH, 03);
         specificCalendar.set(Calendar.DAY_OF_MONTH, 03);
         Logger.getGlobal().info(String.valueOf(specificCalendar));
-
-
-
-
-
-
-
-
     }
 }
