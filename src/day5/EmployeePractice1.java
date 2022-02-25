@@ -1,6 +1,7 @@
 package day5;
 
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.logging.Logger;
 
 public class EmployeePractice1 {
@@ -13,9 +14,9 @@ public class EmployeePractice1 {
 //        Logger.getGlobal().info("Constructor called");
 //    }
     public EmployeePractice1(String name, double salary, LocalDate joiningDate){
-        this.name = name;
+        this.name = Objects.requireNonNullElse(name, "Unknown");
         this.salary = salary;
-        this.joiningDate = joiningDate;
+        this.joiningDate = Objects.requireNonNullElse(joiningDate, LocalDate.now());
     }
 
     public void setAge(int age) {
