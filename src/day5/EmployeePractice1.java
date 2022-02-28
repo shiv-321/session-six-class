@@ -5,7 +5,8 @@ import java.util.Objects;
 import java.util.logging.Logger;
 
 public class EmployeePractice1 {
-    private  String name; //required
+    public static int count;
+    private  String name; //required     //can put default value here but it is there even you don't give the value
     private double salary; //required
     private LocalDate joiningDate; // required
     private int age;  // optional

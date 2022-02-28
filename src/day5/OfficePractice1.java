@@ -10,7 +10,11 @@ public class OfficePractice1 {
         EmployeePractice1 employee2 = new EmployeePractice1("Bob", 1000, LocalDate.now());
         employee2.setAge(30);
 
+        employee1.count = 100;
+
         Logger.getGlobal().info(employee1.getName());
+        Logger.getGlobal().info(String.valueOf(employee2.count));
+
         Logger.getGlobal().info(String.valueOf(employee1.getName().length()));
         Logger.getGlobal().info(String.valueOf(employee1.getJoiningDate()));
 

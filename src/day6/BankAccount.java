@@ -50,7 +50,7 @@ public class BankAccount {
     public void addInterest(BankAccount account){
         double interest = (account.getAccountBalance() * 1 *INTEREST_RATE);
         System.out.println("Principle amount: " + account.getAccountBalance());
-        System.out.println("Interest: " + interest);
+        System.out.println(String.format("Your Interst: %8.2f", interest));
         account.setAccountBalance(account.getAccountBalance() + interest);
         System.out.println("Account 1 balance: " + account.getAccountBalance());
 

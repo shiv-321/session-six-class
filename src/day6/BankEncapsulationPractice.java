@@ -16,7 +16,7 @@ public class BankEncapsulationPractice {
         account2.deposit(account2, 1000);
 
         //InterestCalculation
-//        account1.addInterest(account1);
+        account1.addInterest(account1);
 
         Logger.getGlobal().info("*******Before transfer**********");
         Logger.getGlobal().info(String.valueOf("Account 1: " + account1.getAccountBalance()));
