@@ -9,7 +9,6 @@ public class ForLoop {
             Logger.getGlobal().info(String.valueOf(i));
         }
 
-
         //sum of first n even number
 
         int sum = 0;

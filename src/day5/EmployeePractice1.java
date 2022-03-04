@@ -11,9 +11,11 @@ public class EmployeePractice1 {
     private LocalDate joiningDate; // required
     private int age;  // optional
 
-//    public EmployeePractice1(){
-//        Logger.getGlobal().info("Constructor called");
-//    }
+    //Default constructor
+    public EmployeePractice1(){
+        Logger.getGlobal().info("Constructor called");
+    }
+    //Parameterized constructor
     public EmployeePractice1(String name, double salary, LocalDate joiningDate){
         this.name = Objects.requireNonNullElse(name, "Unknown");
         this.salary = salary;
