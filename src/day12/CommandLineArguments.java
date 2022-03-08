@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 public class CommandLineArguments {
     public static void main(String[] args) {
+        System.out.println(args.length);
 //        for(String arg: args){
 //            Logger.getGlobal().info(arg);
         String URL = "http://dev.facebook.com";
