@@ -41,6 +41,8 @@ public class ArraysPractice {
         // Accessing single element form the array
         int position = marks[1];
         Logger.getGlobal().info(String.valueOf(position));
+        // OR
+        Logger.getGlobal().info(String.valueOf(marks[0]));
 
         // Array length
         System.out.println(marks.length);
@@ -94,6 +96,9 @@ public class ArraysPractice {
         Account forthPosition = savingAccounts[4];
 
         Logger.getGlobal().info(String.valueOf(zeroPosition));
+        // OR
+        Logger.getGlobal().info(String.valueOf(savingAccounts[0]));
+
         Logger.getGlobal().info(String.valueOf(firstPosition));
         Logger.getGlobal().info(String.valueOf(forthPosition));
 
