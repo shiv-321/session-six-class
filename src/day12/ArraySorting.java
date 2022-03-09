@@ -6,12 +6,16 @@ public class ArraySorting {
     public static void main(String[] args) {
 //        int[] integers = {3, 1, 8, 5, 6};
 
+//        System.out.println(Arrays.toString(integers));
+
 //        System.out.println("*********Before sorting********");
 //        for (int element : integers) {
 //            System.out.println(element);
 //        }
 //        //Sorting
 //        Arrays.sort(integers);
+
+
 //        System.out.println("*********After sorting********");
 //        for (int element : integers) {
 //            System.out.println(element);
