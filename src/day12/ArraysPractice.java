@@ -48,7 +48,7 @@ public class ArraysPractice {
         System.out.println(marks.length);
 
         // Array display using for loop
-        for(int i =0; i<marks.length; i++){
+        for(int i = 0; i<marks.length; i++){
             System.out.println(marks[i]);
         }
 
@@ -128,7 +128,12 @@ public class ArraysPractice {
 
         copyOfPrimeNumbers[0]=100;
 
-        System.out.println(primeNumbers[0]);
+//        for (int element :primeNumbers) {
+//            System.out.println(element);
+//        }
+        for (int i =0; i<primeNumbers.length; i++) {
+            System.out.print(primeNumbers[i] + " ");
+        }
 
 
     }

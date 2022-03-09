@@ -7,20 +7,20 @@ public class CommandLineArguments {
         System.out.println(args.length);
 //        for(String arg: args){
 //            Logger.getGlobal().info(arg);
-        String URL = "http://dev.facebook.com";
+        String url = "http://dev.facebook.com";
 
         if(args.length != 0){
             switch (args[0]){
-                case "dev" -> URL = "http://dev.facebook.com";
-                case "staging" -> URL = "http://staging.facebook.com";
-                case "prod" -> URL = "http://facebook.com";
-                default -> URL = "http://dev.facebook.com";
+                case "dev" -> url = "http://dev.facebook.com";
+                case "staging" -> url = "http://staging.facebook.com";
+                case "prod" -> url = "http://facebook.com";
+                default -> url = "http://dev.facebook.com";
             }
         }
         else{
-            URL = "http://dev.facebook.com";
+            url = "http://dev.facebook.com";
         }
-        System.out.println(URL);
+        System.out.println(url);
     }
 
 }
