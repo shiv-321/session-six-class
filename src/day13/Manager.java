@@ -24,7 +24,7 @@ public sealed class Manager extends Employee permits Executive{
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Manager{" +
                 "name='" + super.getName() + '\'' +
                 ", localDate=" + super.getLocalDate() +
                 ", salary=" + super.getSalary() +

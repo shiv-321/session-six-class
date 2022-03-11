@@ -3,7 +3,7 @@ package day15;
 import java.time.LocalDate;
 import java.util.logging.Logger;
 
-public class Accounting {
+public class AccountingInheritance {
     public static void main(String[] args) {
 
         Manager boss = new Manager("Rabina", 50, LocalDate.now(), 5000, 2000);
