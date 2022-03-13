@@ -8,7 +8,7 @@ public class ArrayPractice2 {
         for (int index =0; index < names.length; index++) {
             if (index == 3) {
                 System.out.println(names[index]);
-                break;
+//                break;
             } else {
                 System.out.println("Not interested");
             }
