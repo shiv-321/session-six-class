@@ -20,8 +20,8 @@ public class Student {
     char A;
 
 
-    public void present(){
-        System.out.println("Student is present");
+    public void present(String name){
+        System.out.println("His name is " + name + " and he is present");
     }
 
     public void studying(){

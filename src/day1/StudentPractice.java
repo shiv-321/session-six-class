@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 public class StudentPractice {
     public static void main(String[] args) {
         Student shivaraj = new Student(); // student object
+
         shivaraj.name = "Shivaraj";
         shivaraj.phoneNumber = "6823464682";
         shivaraj.dob = "03/03/1993";
@@ -19,6 +20,7 @@ public class StudentPractice {
         shivaraj.socialSecurityNumber = "10985";
         shivaraj.isTrue = true;
         shivaraj.playing();
+        shivaraj.present("Shiv");
 
        System.out.println(shivaraj.name);
        System.out.println(shivaraj.address);

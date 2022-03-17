@@ -13,6 +13,7 @@ public class EmployeePractice1 {
 
     //Default constructor
     public EmployeePractice1(){
+
         Logger.getGlobal().info("Constructor called");
     }
     //Parameterized constructor
