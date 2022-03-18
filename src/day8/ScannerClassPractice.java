@@ -28,14 +28,14 @@ public class ScannerClassPractice {
         System.out.println("The marks of Chemistry: " + marksChemistry);
         System.out.println("The marks of Biology: " + marksBiology);
         System.out.println("The marks of English: " + marksEnglish);
-        percentage(marksPhysics, marksChemistry,marksBiology,marksEnglish);
-        cgpa(marksPhysics, marksChemistry,marksBiology,marksEnglish);
+//
+        float percentage = (marksPhysics+marksChemistry+marksBiology+marksEnglish)/4;
 
-    }
-    public static void percentage(float Physic, float Chemistry, float Biology, float English){
-        float percentage = (Physic+Chemistry+Biology+English)/4;
         System.out.println("The percentage of your marks is: " + percentage);
+
+        cgpa(marksPhysics, marksChemistry,marksBiology,marksEnglish);
     }
+
     public static void cgpa(float Physics, float Chemistry, float Biology, float English){
         float cgpa = (Physics + Chemistry + Biology + English)/40;
         System.out.println("The CGPA of your marks is: " + cgpa);

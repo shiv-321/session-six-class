@@ -25,12 +25,22 @@ public class Employee {
         return salary;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", localDate=" + localDate +
-                ", salary=" + salary +
-                '}';
+    public String toString(){
+        return name + "\t" + localDate + "\t" + salary;
     }
+
+    /**
+     * toString method is used to print the object directly but we need to override it first
+     * the above method from this comment is manually done whereas the method below from this comment is generated from the IDE
+     * Can use both of them
+     */
+
+//    @Override
+//    public String toString() {
+//        return "Employee{" +
+//                "name='" + name + '\'' +
+//                ", localDate=" + localDate +
+//                ", salary=" + salary +
+//                '}';
+//    }
 }

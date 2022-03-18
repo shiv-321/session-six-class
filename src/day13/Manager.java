@@ -21,16 +21,19 @@ public sealed class Manager extends Employee permits Executive{
 
         return this.bonus + super.getSalary();
     }
-
-    @Override
-    public String toString() {
-        return "Manager{" +
-                "name='" + super.getName() + '\'' +
-                ", localDate=" + super.getLocalDate() +
-                ", salary=" + super.getSalary() +
-                ", bonus=" + this.bonus +
-                '}';
+    public String toString(){
+        return super.getName() + "\t" + super.getLocalDate() + "\t" + super.getSalary() + "\t" + this.bonus;
     }
+
+//    @Override
+//    public String toString() {
+//        return "Manager{" +
+//                "name='" + super.getName() + '\'' +
+//                ", localDate=" + super.getLocalDate() +
+//                ", salary=" + super.getSalary() +
+//                ", bonus=" + this.bonus +
+//                '}';
+//    }
 }
 
 
