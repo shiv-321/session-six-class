@@ -45,9 +45,8 @@ public class ArrayListPractice {
 
         //removing the element from the ArrayList
         //removing the element using direct object
-        boolean removed = names.remove("Bob");  // if we are removing the element based on our object then we need to override
-        System.out.println(removed);                // here String class already override it in the system
-        System.out.println(names);
+        names.remove("Bob");  // if we are removing the element based on our object then we need to override
+        System.out.println(names);                // here String class already override it in the system
 
         // removing the elelment using the index position
         System.out.println(names.remove(4));

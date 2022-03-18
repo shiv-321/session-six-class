@@ -11,6 +11,7 @@ public class ObjectClassTest {
 
         Logger.getGlobal().info(student.toString());
         Logger.getGlobal().info(student1.toString());
+//        System.out.println(student); // if we use this method we even don't need to add .toString but still it will give result following the toString method
         // to calculate hashcode
         Logger.getGlobal().info(String.valueOf(student.hashCode()));
         Logger.getGlobal().info(String.valueOf(student1.hashCode()));

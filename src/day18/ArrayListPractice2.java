@@ -12,8 +12,8 @@ public class ArrayListPractice2 {
         firstFivePrimeNumbers.add(7);
         firstFivePrimeNumbers.add(11);
 
-        ArrayList<Integer> firstTenPrimeNumbers = new ArrayList<>(firstFivePrimeNumbers);
-        System.out.println(firstTenPrimeNumbers);
+        ArrayList<Integer> usingCollection = new ArrayList<>(firstFivePrimeNumbers);
+        System.out.println(usingCollection);
 
         ArrayList<Integer>nextFivePrimeNumbers = new ArrayList<>();
         nextFivePrimeNumbers.add(13);
@@ -23,9 +23,9 @@ public class ArrayListPractice2 {
         nextFivePrimeNumbers.add(29);
 
         // adding an entire collection to an ArrayList
-        firstTenPrimeNumbers.addAll(nextFivePrimeNumbers);
+        usingCollection.addAll(nextFivePrimeNumbers);
 //        firstFivePrimeNumbers.addAll(nextFivePrimeNumbers);
-        System.out.println(firstTenPrimeNumbers);
+        System.out.println(usingCollection);
     }
 }
 /**
