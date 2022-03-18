@@ -7,11 +7,17 @@ public class Employee {
     private LocalDate localDate;
     private double salary;
 
+    public Employee(){
+
+    }
+
     public Employee(String name, LocalDate localDate, double salary) {
         this.name = name;
         this.localDate = localDate;
         this.salary = salary;
     }
+
+
 
     public String getName() {
         return name;

@@ -30,5 +30,10 @@ public class InheritancePractice1 {
         Employee employee2 = new Executive("Runny", LocalDate.now(), 5000, 3000);
         System.out.println(employee2);
 
+
+        Manager manager1 = new Manager();
+        System.out.println(manager1);
+
+
     }
 }

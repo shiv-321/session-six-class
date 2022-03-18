@@ -7,6 +7,11 @@ public sealed class Manager extends Employee permits Executive{
 
     private double bonus;
 
+   Manager(){
+
+   }
+
+
     public Manager(String name, LocalDate localDate, double salary, double bonus) {
         super(name, localDate, salary);
         this.bonus = bonus;
