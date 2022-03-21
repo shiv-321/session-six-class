@@ -8,7 +8,7 @@ public class AssigningValueFromUser {
 
         Scanner sc = new Scanner(System.in);
         for (int i =0; i<myArrays.length; i++){
-            System.out.println("Enter the value" + i + "position element");
+            System.out.println("Enter the value " + i + " position element");
             myArrays[i] = sc.nextInt();
         }
         for (int i =0; i<myArrays.length; i++){

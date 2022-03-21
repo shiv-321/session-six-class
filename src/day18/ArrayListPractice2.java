@@ -1,6 +1,7 @@
 package day18;
 
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class ArrayListPractice2 {
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class ArrayListPractice2 {
         firstFivePrimeNumbers.add(7);
         firstFivePrimeNumbers.add(11);
 
+        ;
         ArrayList<Integer> usingCollection = new ArrayList<>(firstFivePrimeNumbers);
         System.out.println(usingCollection);
 

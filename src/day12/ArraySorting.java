@@ -15,7 +15,6 @@ public class ArraySorting {
 //        //Sorting
 //        Arrays.sort(integers);
 
-
 //        System.out.println("*********After sorting********");
 //        for (int element : integers) {
 //            System.out.println(element);
@@ -28,7 +27,6 @@ public class ArraySorting {
                 isSorted = false;
                 break;
             }
-
         }
         if (isSorted){
             System.out.println("Sorted array");
