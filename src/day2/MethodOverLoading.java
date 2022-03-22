@@ -3,7 +3,7 @@ package day2;
 public class MethodOverLoading {
     //On the basis of number of parameters
     public static int addition(int a, int b){
-        System.out.println("The sum of two integers: ");
+//        System.out.println("The sum of two integers: ");
         return a + b;
     }
     public static int addition(int a, int b, int c){

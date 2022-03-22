@@ -1,6 +1,7 @@
 package day18A;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 // super class
 public class Employee {
@@ -49,5 +50,18 @@ public class Employee {
                 ", localDate=" + localDate +
                 ", salary=" + salary +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return name.equals(employee.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 }

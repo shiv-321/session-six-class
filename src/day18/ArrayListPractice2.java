@@ -13,7 +13,7 @@ public class ArrayListPractice2 {
         firstFivePrimeNumbers.add(7);
         firstFivePrimeNumbers.add(11);
 
-        ;
+
         ArrayList<Integer> usingCollection = new ArrayList<>(firstFivePrimeNumbers);
         System.out.println(usingCollection);
 

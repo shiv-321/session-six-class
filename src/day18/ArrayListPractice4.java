@@ -22,8 +22,9 @@ public class ArrayListPractice4 {
         // Remove the first occurrence of the given element from the ArrayList
         // (The remove() method returns false if the element does not exist in the ArrayList)
 
-        programmingLanguages.remove("R");
-        System.out.println("After remove R: " + programmingLanguages);
+        boolean removed = programmingLanguages.remove("R");
+        System.out.println("After remove R: " + removed);
+        System.out.println(programmingLanguages);
 
         // remove all the elements that exist in a given collection
 

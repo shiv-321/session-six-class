@@ -25,6 +25,7 @@ public class Student {
     public int hashCode() {
         return Objects.hash(name, rollNumber, studentClass);
     }
+
     public String toString(){
         return name + "\t" + rollNumber + "\t" + studentClass;
     }

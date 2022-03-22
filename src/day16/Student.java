@@ -20,7 +20,7 @@ public class Student extends Person{
         return "Student{" +
                 "name= " + super.getName() +
                 " age= " + super.getAge() +
-                " rollNumber= " + rollNumber +
+                " rollNumber= " + this.rollNumber +
                 '}';
     }
 

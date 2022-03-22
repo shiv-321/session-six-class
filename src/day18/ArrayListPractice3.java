@@ -30,6 +30,10 @@ public class ArrayListPractice3 {
         //modifying the element at a given index
         topCompanies.set(4, "Walmart");
         System.out.println("Modified list: " + topCompanies);
+
+        // check if the data exist there in the ArrayList or not
+        boolean isPresent = topCompanies.contains("Facebook");
+        System.out.println("check: " + isPresent);
     }
 }
 
