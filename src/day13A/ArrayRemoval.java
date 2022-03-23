@@ -7,21 +7,20 @@ public class ArrayRemoval {
         Scanner sc = new Scanner(System.in);
 
         int[] arr = {1, 2, 5, 12, 7, 3, 8};
+        int[] newArray = new int[arr.length-1];
 
         System.out.println("Enter the element to be deleted: ");
         int element = sc.nextInt();
-
+        int j =0;
         for (int i = 0; i < arr.length; i++){
-            if (arr[i] == element){
-                for (int j = i; j<arr.length-1; j++){
-                    arr[j] = arr[j+1];
-                }
-                break;
+            if (arr[i] != element){
+                newArray[j]=arr[i];
+                j++;
             }
         }
         System.out.println("Elements -- ");
-        for (int i = 0; i<arr.length; i++){
-            System.out.println(arr[i] + " ");
+        for (int i = 0; i<newArray.length; i++){
+            System.out.println(newArray[i]);
         }
     }
 }
