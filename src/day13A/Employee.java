@@ -5,7 +5,7 @@ import day5.Gender;
 import java.util.Objects;
 import java.util.logging.Logger;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
     private String name;
     private float salary;
     private String phoneNumber;
@@ -24,7 +24,7 @@ public class Employee {
         this.salary = salary;
         this.phoneNumber = phoneNumber;
         this.gender = gender;
-        Logger.getGlobal().info("First parameterized constructor");
+//        Logger.getGlobal().info("First parameterized constructor");
 
     }
     public Employee(String name, float salary, String phoneNumber, Gender gender, String licenseNumber){
@@ -32,7 +32,7 @@ public class Employee {
         this.salary = salary;
         this.phoneNumber = Objects.requireNonNullElse(phoneNumber, "");
         this.licenseNumber = Objects.requireNonNullElse(licenseNumber, "");
-        Logger.getGlobal().info("Second parameterized constructor");
+//        Logger.getGlobal().info("Second parameterized constructor");
 
     }
 
@@ -80,6 +80,12 @@ public class Employee {
     public void addBonus(Employee employee, float bonus){
         employee.salary = employee.salary + bonus;
     }
+
+    @Override
+    public int compareTo(Employee o) {
+        return Float.compare(o.salary, this.salary);
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -88,5 +94,7 @@ public class Employee {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", licenseNumber='" + licenseNumber + '\'' +
                 '}';
+
+
     }
 }
