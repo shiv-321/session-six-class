@@ -5,13 +5,17 @@ public class GenericMethodPractice {
         Integer[] values = {1, 2, 3, 4, 5};
         Float[] fvalues = {1.0f, 2f, 3f, 4f, 5f};
         String [] svalues = {"a", "b", "c"};
+
         printArray(values);
         printArray(svalues);
         printArray(fvalues);
 
     }
+    // this function support all kind of data
+    // sometimes we need to block for some types of data
+//
         // this is called with integer and float array
-    public static <T extends Number>void printArray(T[] values){
+    public static <T extends Number> void printArray(T[] values){
         for (T val :values){
             System.out.println(val);
         }
@@ -23,4 +27,9 @@ public class GenericMethodPractice {
             System.out.println(val);
         }
     }
+//    public static void printArray(Integer[] values){
+//        for (Integer val: values){
+//            System.out.println(val);
+//        }
+//    }
 }

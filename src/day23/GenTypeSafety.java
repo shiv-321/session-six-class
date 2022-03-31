@@ -14,7 +14,7 @@ public class GenTypeSafety {
 
         String s1 = (String) al.get(0);
         String s2 = (String) al.get(1);
-        String s3 = (String) al.get(2); // causes runtime exception
+        Integer s3 = (int) al.get(2); // causes runtime exception
 
 
     }

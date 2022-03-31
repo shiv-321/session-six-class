@@ -22,6 +22,8 @@ public class GenericTest2<T,U> {
 
     public static void main(String[] args) {
         GenericTest2<String, Integer> obj = new GenericTest2<>("GfG", 15);
+        GenericTest2<String, String> obj1 = new GenericTest2<>("GfG", "15");
         obj.print();
+        obj1.print();
     }
 }

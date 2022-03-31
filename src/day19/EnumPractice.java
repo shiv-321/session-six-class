@@ -24,6 +24,7 @@ public class EnumPractice {
 
         System.out.println(allDayList);
 
+
         // create enum list -> also called converting enum class to array
         EnumSet<WeekDay> allDays = EnumSet.allOf(WeekDay.class);
         System.out.println(allDays);
