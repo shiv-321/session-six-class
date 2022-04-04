@@ -12,6 +12,7 @@ public class SmallCollection {
         //We can not add data and it does not give error at compile time, gives error in run time
 //        stringArrayList.add("CDF");
 
+        //converting between collection and array
         List<String> arrayListCopy = new ArrayList<>(stringArrayList);
 
         arrayListCopy.add("CDF");
@@ -69,6 +70,13 @@ public class SmallCollection {
         //unmodifiableList.add("Shiv11"); // throws an error
 
 
+//        Collections.unmodifiableList
+//        Collections.unmodifiableSet
+//        Collections.unmodifiableSortedSet
+//        Collections.unmodifiableNavigableSet
+//        Collections.unmodifiableMap
+//        Collections.unmodifiableSortedMap
+//        Collections.unmodifiableNavigableMap
 
 
     }

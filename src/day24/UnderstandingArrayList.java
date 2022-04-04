@@ -9,6 +9,7 @@ public class UnderstandingArrayList {
         ArrayList<Integer> al = new ArrayList<>();
 
         // appending new elements at the end of the list
+
         for (int i = 1; i<=5; i++)
             al.add(i);
         System.out.println(al);
