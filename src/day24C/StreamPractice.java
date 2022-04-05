@@ -9,7 +9,7 @@ public class StreamPractice {
     public static void main(String[] args) {
 
 
-        //creating strea,
+        //creating stream,
         List<Integer> numbers = Arrays.asList(1,2,4,3,2,5,6,7,8,9,10);
         Stream<Integer> numberStream = numbers.stream();
 

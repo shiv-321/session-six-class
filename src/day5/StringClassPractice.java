@@ -25,6 +25,12 @@ public class StringClassPractice {
         // Logger.getGlobal().info(String.valueOf(greetings.charAt(2)));
 
         // compareTo() --> compare two strings -- based on ASCI value
+        /*
+        ASCI values to remember
+        - A-Z -> 65-90
+        - a-z -> 97-122
+        - 0-9 -> 48-57
+         */
 
 //        int compareOutput = "Hello".compareTo("Hello");
 //        Logger.getGlobal().info(String.valueOf(compareOutput));
@@ -76,12 +82,12 @@ public class StringClassPractice {
 //        Logger.getGlobal().info(String.valueOf(String.format("Hello %s, Welcome to this class", "Subina")));
 
         //isBlank and isEmpty
-//        String empty = "  ";
-//        Logger.getGlobal().info(String.valueOf(empty.length()));
-//        Logger.getGlobal().info(String.valueOf(empty.isBlank())); //it ignores white space, so it throws true if there is no character or other value
-//        Logger.getGlobal().info(String.valueOf(empty.isEmpty())); // this look at the length and if it is not 0 then it throws false use blank
+        String empty = "  ";
+        Logger.getGlobal().info(String.valueOf(empty.length()));
+        Logger.getGlobal().info(String.valueOf(empty.isBlank())); //it ignores white space, so it throws true if there is no character or other value
+        Logger.getGlobal().info(String.valueOf(empty.isEmpty())); // this look at the length and if it is not 0 then it throws false use blank
 
-        // .trim --> returns a new string after removing all the leading and trailing spaces from the original string
+        // .trim --> returns a new string after removing all the leading and trailing spaces from the original String
 //        String message = "              This is a wonderful day!";
 //        Logger.getGlobal().info(String.valueOf(message.trim()));
 //        Logger.getGlobal().info(message);
@@ -116,8 +122,8 @@ public class StringClassPractice {
 //        Logger.getGlobal().info(String.valueOf(exercise.lastIndexOf("y")));
 //        Logger.getGlobal().info(String.valueOf(exercise.lastIndexOf("y",2)));
 
-//        String joinExample = String.join("/", "S", "L", "XL", "XXL");
-//        Logger.getGlobal().info(joinExample);
+        String joinExample = String.join("/", "S", "L", "XL", "XXL");
+        Logger.getGlobal().info(joinExample);
 
 
 
