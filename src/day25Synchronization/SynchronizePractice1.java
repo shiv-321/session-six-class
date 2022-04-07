@@ -32,7 +32,7 @@ class T extends Thread{
 }
 
 
-public class SynchronizePractice {
+class SynchronizePractice {
     public static void main(String[] args) {
         Example ex = new Example();
         T t1 = new T(ex);
