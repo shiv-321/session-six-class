@@ -1,6 +1,9 @@
 package day5;
 
+import java.io.InputStreamReader;
+import java.util.Calendar;
 import java.util.Locale;
+import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
 public class StringClassPractice {
@@ -83,9 +86,9 @@ public class StringClassPractice {
 
         //isBlank and isEmpty
         String empty = "  ";
-        Logger.getGlobal().info(String.valueOf(empty.length()));
-        Logger.getGlobal().info(String.valueOf(empty.isBlank())); //it ignores white space, so it throws true if there is no character or other value
-        Logger.getGlobal().info(String.valueOf(empty.isEmpty())); // this look at the length and if it is not 0 then it throws false use blank
+//        Logger.getGlobal().info(String.valueOf(empty.length()));
+//        Logger.getGlobal().info(String.valueOf(empty.isBlank())); //it ignores white space, so it throws true if there is no character or other value
+//        Logger.getGlobal().info(String.valueOf(empty.isEmpty())); // this look at the length and if it is not 0 then it throws false use blank
 
         // .trim --> returns a new string after removing all the leading and trailing spaces from the original String
 //        String message = "              This is a wonderful day!";
@@ -96,6 +99,9 @@ public class StringClassPractice {
         String splitPractice = "Hello Java Students";
         String[] splitedString = splitPractice.split(" ");
         String[] splitedString1 = splitPractice.split(",");
+        for (String s:splitedString){
+            System.out.println(s);
+        }
         Logger.getGlobal().info(String.valueOf(splitedString.length));
         Logger.getGlobal().info(String.valueOf(splitedString1.length));  //consider 1 while splitting by comma
 
@@ -125,14 +131,83 @@ public class StringClassPractice {
         String joinExample = String.join("/", "S", "L", "XL", "XXL");
         Logger.getGlobal().info(joinExample);
 
+        // changing upperCase to lowerCase and vice versa
+        String s1 = "United States of America";
+        String s = "";
+        for (int i =0; i<s1.length(); i++){
+            char c = s1.charAt(i);
+            int ic = (int) c;
 
+            if (ic>=65 && ic<=90)
+                s+= (char) (ic+32);
+            else if (ic>=97 && ic<=122)
+                s+= (char)(ic-32);
+            else
+                s+=c;
+        }
+        System.out.println(s);
 
+        // String to char Array
+        char[] c = s1.toCharArray();
+        for (char ch : c){
+            System.out.print(ch + " ");
+        }
+        System.out.println("\n");
+        // to reverse the string
+        int l = c.length;
+        int n = Math.floorDiv(l, 2);
+        char temp;
 
+        for (int i=0; i<n; i++){
+            temp = c[i];
+            c[i] = c[l-1-i];
+            c[l-1-i]  = temp;
+        }
+        for (char ch : c){
+            System.out.print(ch + " ");
+        }
+        System.out.println("\n");
 
+        //StringTokenizer
+        String s2 = "United States of America and United States of Arab";
+        StringTokenizer st = new StringTokenizer(s2, " ");
+        while (st.hasMoreTokens()){
+            System.out.println(st.nextToken());
+        }
 
+        // another example of StringTokenizer
+        Calendar c1 = Calendar.getInstance();
+        System.out.println(c1.getTime());
 
+        StringTokenizer st1 = new StringTokenizer(c1.getTime().toString()," :");
+        int size = st1.countTokens();
+        String[] sarr = new String[size];
+        int i =0;
+        while (st1.hasMoreTokens()){
+            System.out.println(st1.nextToken());
+            i++;
+        }
+        for (String token : sarr){
+            System.out.println(token);
+        }
 
+        // String multiline input
+        /*InputStreamReader isr = new InputStreamReader(System.in);
+        System.out.println("Enter some line of data");
+        try{
+            int x = isr.read();
+            String s5 = "";
+            while (x!= -1){
+                s5 += (char)x;
+                x = isr.read();
+            }
+            System.out.println("You have enter following input: \n" + s.toUpperCase());
 
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
+         */
+        // should learn File readline from the folder from Eclipse folder
     }
 }
