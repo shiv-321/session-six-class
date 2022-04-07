@@ -1,7 +1,7 @@
 package day25Synchronization;
-
+// synchronized keyword in the method as a prefix
 class Example{
-    void display(){
+    synchronized void display(){
         Thread g = Thread.currentThread();
         for (int i =0; i<=5; i++){
             try{
@@ -10,16 +10,7 @@ class Example{
             }catch (Exception e) {
             }
         }
-        synchronized (this){
-        for (int i =0; i<=5; i++){
-            try{
-                Thread.sleep(1000);
-                System.out.println(g.getName() + " " + i);
-            }catch (Exception e) {
-            }
-            }
-        }
-    }
+      }
 }
 class T extends Thread{
     Example e;
