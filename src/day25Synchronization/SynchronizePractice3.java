@@ -1,6 +1,12 @@
 package day25Synchronization;
 // synchronized static block
 
+import day24A.Queue;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.concurrent.BlockingQueue;
+
 class Example3{
     synchronized static void dispay(){
         Thread g = Thread.currentThread();
