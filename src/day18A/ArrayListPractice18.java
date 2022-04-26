@@ -15,7 +15,7 @@ public class ArrayListPractice18 {
         System.out.println(employees);
 
         System.out.println("**************After removing*************");
-//        employees.remove(1);
+//        employees.remove(2);
 //        System.out.println(employees);
 
         employees.remove(new Employee("Ram", LocalDate.now(), 200));
