@@ -16,5 +16,6 @@ public abstract class Person {
     public String getAge() {
         return age;
     }
+
     public abstract void printDescription();
 }

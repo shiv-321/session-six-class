@@ -1,7 +1,5 @@
 package day9;
 
-import java.io.*;
-
 import java.io.Console;
 
 public class ConsoleClassPractice {

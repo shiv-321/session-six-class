@@ -17,7 +17,7 @@ public class ConstructorPractice {
     /**
      * constructor is a method that have same name with class name.
      * created a default constructor and added their default value to understand but not need to add this way
-     * Even we don't create default constructor it will be there implicitly.     *
+     * Even we don't create default constructor it will be there implicitly.
      */
     //constructor with two parameters
     public ConstructorPractice(String name, float salary){
@@ -37,6 +37,15 @@ public class ConstructorPractice {
         this.licenseNumber = Objects.requireNonNullElse(licenseNumber, "Unknown");
     }
 
+    @Override
+    public String toString() {
+        return "ConstructorPractice{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+
+
     /**
      * While we create constructor we generally do not give the value like in the constructor with two parameters
      * we use this keyword to reference the field like in the constructor with three parameters
@@ -53,6 +62,7 @@ public class ConstructorPractice {
         ConstructorPractice student2 = new ConstructorPractice("Ashu", 1000.89f);
         Logger.getGlobal().info(student2.name);
         Logger.getGlobal().info(String.valueOf(student2.salary));
+        Logger.getGlobal().info(String.valueOf(student2));
 
         ConstructorPractice student3 = new ConstructorPractice("Ashu", 1000.89f, "123123321");
         Logger.getGlobal().info(student3.name);

@@ -13,8 +13,8 @@ public class StringBuilderPractice {
         stringBuilder.append("tutor");
         stringBuilder.append(".");
 
-        String concatinatedString = stringBuilder.toString();
-        Logger.getGlobal().info(concatinatedString);
+//        String concatinatedString = stringBuilder.toString();
+//        Logger.getGlobal().info(concatinatedString);
         Logger.getGlobal().info(stringBuilder.toString());
 
     }

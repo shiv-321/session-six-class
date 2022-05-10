@@ -23,8 +23,8 @@ public class Employee {
         this.phoneNumber = phoneNumber;
         this.gender = gender;
         Logger.getGlobal().info("First parameterized constructor");
-
     }
+
     public Employee(String name, float salary, String phoneNumber, Gender gender, String licenseNumber){
         this.name = Objects.requireNonNullElse(name, "");
         this.salary = salary;
@@ -33,8 +33,6 @@ public class Employee {
         Logger.getGlobal().info("Second parameterized constructor");
 
     }
-
-
     public String getName() {
         return name;
     }

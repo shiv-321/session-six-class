@@ -5,7 +5,7 @@ public class Cons {
         System.out.println("I am constructor");
     }
     Cons(String name){
-        System.out.println("My name is "+name);
+        System.out.println("My name is "+ name);
     }
 
     public static void main(String[] args) {

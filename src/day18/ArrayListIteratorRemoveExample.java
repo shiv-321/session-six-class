@@ -16,6 +16,7 @@ public class ArrayListIteratorRemoveExample {
         for (int i =0; i<numbers.size(); i++){
             System.out.println(numbers.get(i));
         }
+        System.out.println(numbers);
 
         System.out.println(numbers.contains(30));
         System.out.println(numbers.contains(25));

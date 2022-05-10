@@ -26,12 +26,12 @@ public class MoreAboutArray {
                 }
             index++;
             }
-
-         */
+ */
 
         // copying array
         Employee[] employees = new Employee[5];
         employees[3] = new Employee("Shivaraj", 2000f, "6823464682", Gender.MALE, "111222333");
+
 
         /*
         System.out.println("*****Before copying data****");

@@ -6,5 +6,7 @@ public class Welcome {
             System.out.print("=");
         }
         System.out.println();
+        String name = "Subina";
+        System.out.printf("%S is a girl", name);
     }
 }

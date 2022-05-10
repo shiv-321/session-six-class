@@ -21,6 +21,9 @@ public class StaticDemo {
     public static void main(String[] args) {
         Logger.getGlobal().info(String.valueOf(a));
         display();
+
+        getA();
+        setA(20);
     }
 
 }

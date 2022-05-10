@@ -19,6 +19,7 @@ public class AccountingInheritance {
         AccountingInheritance accounting = new AccountingInheritance();
         accounting.add(2, 3);
         accounting.add(2, 3, 4);
+//        accounting.add(2, 3, 4, 5);
 
 
 
@@ -45,6 +46,7 @@ public class AccountingInheritance {
     public void add(int a, int b){}
 
     public void add(int a, int b, int c){}
+
 
 //    public void printSalary(Manager manager){
 //        System.out.println(manager.getSalary());

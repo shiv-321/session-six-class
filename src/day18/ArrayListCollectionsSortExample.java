@@ -21,4 +21,3 @@ public class ArrayListCollectionsSortExample {
         System.out.println("After : " + numbers);
     }
 }
-
