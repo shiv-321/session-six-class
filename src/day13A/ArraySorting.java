@@ -23,5 +23,7 @@ public class ArraySorting {
         for (Employee employee: employees){
             System.out.println(employee);
         }
+        Arrays.sort(employees, Employee.NameComparator);
+        System.out.println(Arrays.toString(employees));
     }
 }

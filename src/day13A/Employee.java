@@ -2,6 +2,7 @@ package day13A;
 
 import day5.Gender;
 
+import java.util.Comparator;
 import java.util.Objects;
 import java.util.logging.Logger;
 
@@ -83,8 +84,15 @@ public class Employee implements Comparable<Employee>{
 
     @Override
     public int compareTo(Employee o) {
-        return Float.compare(o.salary, this.salary);
+        return Float.compare(this.salary, o.salary);
     }
+
+    public static Comparator<Employee> NameComparator = new Comparator<Employee>() {
+        @Override
+        public int compare(Employee o1, Employee o2) {
+            return o1.getName().compareTo(o2.getName());
+        }
+    };
 
     @Override
     public String toString() {
