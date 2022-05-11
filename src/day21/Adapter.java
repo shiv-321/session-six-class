@@ -4,6 +4,7 @@ public class Adapter {
     private ItemClickListener itemClickListener;
 
     public Adapter(ItemClickListener itemClickListener) {
+
         this.itemClickListener = itemClickListener;
     }
     public void onButtonClicked(){

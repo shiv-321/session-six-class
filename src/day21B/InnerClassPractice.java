@@ -4,6 +4,7 @@ class Outer{
 
     class Inner{
         public void show(){
+
             System.out.println("In a nested class method");
         }
     }
@@ -11,8 +12,8 @@ class Outer{
 public class InnerClassPractice {
     public static void main(String[] args) {
 
-        Outer.Inner in = new Outer().new Inner();
-        in.show();
+        Outer.Inner inner = new Outer().new Inner();
+        inner.show();
     }
 }
 /**

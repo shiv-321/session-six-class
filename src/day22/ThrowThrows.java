@@ -25,7 +25,7 @@ public class ThrowThrows {
         return result;
     }
     public static void main(String[] args) {
-        //uses devide function created by Harry
+        //uses divide function created by Harry
         try{
 //            int c = divide(6, 0);
 //            System.out.println(c);

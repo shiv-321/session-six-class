@@ -5,8 +5,8 @@ public class Finally {
         try{
             int a = 50;
             int b = 2;
-            int c = a/b;
-            return c;
+//            return a/b;
+            System.out.println(a/b);
         }
         catch (Exception e){
             System.out.println(e);
